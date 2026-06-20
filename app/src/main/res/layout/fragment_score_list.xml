@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/score_LST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Top 10"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/menu_default_margin"
+        android:textColor="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/score_LST_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

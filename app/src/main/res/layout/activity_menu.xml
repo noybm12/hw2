@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".MenuActivity">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/menu_SWITCH_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fast"
+        android:textColor="@color/white"
+        android:textSize="@dimen/menu_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/menu_default_margin"
+        android:layout_marginHorizontal="@dimen/menu_default_margin"
+        android:layout_below="@id/menu_TXT_menu"
+        android:backgroundTint="@color/menu_button"
+        app:thumbTint="@color/menu_button"
+        />
+
+    <Button
+        android:id="@+id/menu_BTN_buttongame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Mode"
+        android:textSize="@dimen/menu_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/menu_SWITCH_speed"
+        android:layout_marginHorizontal="@dimen/menu_default_margin"
+        android:backgroundTint="@color/menu_button"
+        android:layout_marginTop="80dp" />
+
+    <Button
+        android:id="@+id/menu_BTN_sensorgame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sensor Mode"
+        android:textSize="@dimen/menu_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/menu_BTN_buttongame"
+        android:layout_marginHorizontal="@dimen/menu_default_margin"
+        android:layout_marginTop="@dimen/menu_default_margin"
+        android:backgroundTint="@color/menu_button" />
+
+    <Button
+        android:id="@+id/menu_BTN_topten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_BTN_sensorgame"
+        android:layout_marginTop="@dimen/menu_default_margin"
+        android:layout_centerHorizontal="true"
+        android:text="Top 10"
+        android:textSize="@dimen/menu_text_size"
+        android:backgroundTint="@color/menu_button"
+        android:layout_marginHorizontal="@dimen/menu_default_margin"
+        />
+
+    <TextView
+        android:id="@+id/menu_TXT_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/menu_default_margin"
+         />
+</RelativeLayout>

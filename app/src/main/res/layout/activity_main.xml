@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/app_background">
+    <!--
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/charachter_margin">
+        <ImageView
+            android:id="@+id/main_IMG_charachter"
+            android:layout_width="@dimen/character_dimen"
+            android:layout_height="@dimen/character_dimen"
+            app:srcCompat="@drawable/nemo"
+            />
+    </FrameLayout>-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/charachter_margin">
+
+        <ImageView
+            android:id="@+id/main_IMG_charachter"
+            android:layout_width="@dimen/character_dimen"
+            android:layout_height="@dimen/character_dimen"
+            app:srcCompat="@drawable/nemo"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+<!--        app:layout_constraintHorizontal_bias="0.5" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/lane_0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_IMG_obstacle0"
+                android:layout_width="@dimen/obstacle_dimen"
+                android:layout_height="@dimen/obstacle_dimen"
+                app:srcCompat="@drawable/shark"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="448dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"/>
+            <ImageView
+                android:id="@+id/main_IMG_coin0"
+                android:layout_width="@dimen/coin_dimen"
+                android:layout_height="@dimen/coin_dimen"
+                app:srcCompat="@drawable/coin"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="448dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/lane_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_IMG_obstacle1"
+                android:layout_width="@dimen/obstacle_dimen"
+                android:layout_height="@dimen/obstacle_dimen"
+                app:srcCompat="@drawable/shark"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="448dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"/>
+            <ImageView
+                android:id="@+id/main_IMG_coin1"
+                android:layout_width="@dimen/coin_dimen"
+                android:layout_height="@dimen/coin_dimen"
+                app:srcCompat="@drawable/coin"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="448dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lane_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_IMG_obstacle2"
+                android:layout_width="@dimen/obstacle_dimen"
+                android:layout_height="@dimen/obstacle_dimen"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"
+                app:srcCompat="@drawable/shark"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="300dp" />
+            <ImageView
+                android:id="@+id/main_IMG_coin2"
+                android:layout_width="@dimen/coin_dimen"
+                android:layout_height="@dimen/coin_dimen"
+                app:srcCompat="@drawable/coin"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="448dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/lane_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_IMG_obstacle3"
+                android:layout_width="@dimen/obstacle_dimen"
+                android:layout_height="@dimen/obstacle_dimen"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"
+                app:srcCompat="@drawable/shark"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="300dp" />
+            <ImageView
+                android:id="@+id/main_IMG_coin3"
+                android:layout_width="@dimen/coin_dimen"
+                android:layout_height="@dimen/coin_dimen"
+                app:srcCompat="@drawable/coin"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="448dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"/>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/lane_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_IMG_obstacle4"
+                android:layout_width="@dimen/obstacle_dimen"
+                android:layout_height="@dimen/obstacle_dimen"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"
+                app:srcCompat="@drawable/shark"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="300dp" />
+            <ImageView
+                android:id="@+id/main_IMG_coin4"
+                android:layout_width="@dimen/coin_dimen"
+                android:layout_height="@dimen/coin_dimen"
+                app:srcCompat="@drawable/coin"
+                tools:layout_editor_absoluteX="151dp"
+                tools:layout_editor_absoluteY="448dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"/>
+        </FrameLayout>
+    </LinearLayout>
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="@dimen/default_margin">
+
+    <ImageButton
+        android:id="@+id/main_BTN_left"
+        android:layout_width="@dimen/arrow_dimen"
+        android:layout_height="@dimen/arrow_dimen"
+        android:layout_marginEnd="200dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/left_arrow"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:paddingStart="12dp"/>
+
+    <ImageButton
+        android:id="@+id/main_BTN_right"
+        android:layout_width="@dimen/arrow_dimen"
+        android:layout_height="@dimen/arrow_dimen"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/right_arrow"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        android:paddingStart="12dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="@dimen/default_margin">
+
+    <ImageView
+        android:id="@+id/main_IMG_heart0"
+        android:layout_width="@dimen/heart_dimen"
+        android:layout_height="@dimen/heart_dimen"
+        app:srcCompat="@drawable/heart"
+        tools:layout_editor_absoluteX="1dp"/>
+
+    <ImageView
+        android:id="@+id/main_IMG_heart1"
+        android:layout_width="@dimen/heart_dimen"
+        android:layout_height="@dimen/heart_dimen"
+        app:srcCompat="@drawable/heart"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        tools:layout_editor_absoluteX="144dp"/>
+
+    <ImageView
+        android:id="@+id/main_IMG_heart2"
+        android:layout_width="@dimen/heart_dimen"
+        android:layout_height="@dimen/heart_dimen"
+        app:srcCompat="@drawable/heart"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="16dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout
+        android:id="@+id/main_startOver"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:background="@color/background_messege"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:visibility="invisible">
+     <TextView
+            android:id="@+id/main_TXT_coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="coins:"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="48sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_BTN_menu"
+            android:text="Menu"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+
+            />
+
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/main_TXT_odometer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_margin="@dimen/default_margin"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    tools:text="000"
+
+    />
+
+</RelativeLayout>

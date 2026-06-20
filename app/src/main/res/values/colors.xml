@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#C0FF96BB</color>
+    <color name="heart_color">#FF5722</color>
+    <color name="background_messege">#FF9800</color>
+    <color name="icon_bg1">#88D7F4</color>
+    <color name="icon_bg2">#E084FFFF</color>
+    <color name="icon_bg3">#BF00BCD4</color>
+    <color name="menu_button">#FF5722</color>
+
+
+
+
+
+
+</resources>
